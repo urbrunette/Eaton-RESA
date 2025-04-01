@@ -1,0 +1,64 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>box site</title>
+    <style>
+div{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(67, 141, 225);
+    border: 2px solid blue;
+}
+#one{
+    position: static;
+}
+#two{
+    position: relative;
+    left:100px;
+    top:-50px;
+    z-index:50;
+}
+#three{
+    position:absolute;
+    background: blue;
+    right:100px;
+    top:500px;
+    z-index:600;
+}
+#four{
+    position: fixed;
+    background: rgb(18, 157, 226);
+    left:500px;
+    top:70px; 
+}
+#five{
+    position: sticky;
+    top:0px;
+    background: rgb(41, 89, 234);
+}
+
+    </style>
+
+</head>
+
+<body>
+    <div id="one">
+       
+    </div><div id="five">
+</div>
+        <div id="two">
+          
+        </div>
+  <div id="three">
+  
+  </div>
+<div id="four">
+    
+</div>
+
+</body>
+
+</html>
