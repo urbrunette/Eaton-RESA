@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>float</title>
+
+    <style>
+.right{
+    float:right;
+    margin-left:20px;
+}
+.right::after{
+    content:"";
+    clear:both;
+    display: table;
+}
+.left{
+    float:left;
+    margin-left:20px;
+}
+.left::after{
+    content:"";
+    clear:both;
+    display: table;
+}
+    </style>
+    
+</head>
+
+<body>
+   <img class="right" src="pineapple.jpg"alt="spongebob's house"/>
+
+   <p>a bunch of freaking text here. write what you want. theres a pineapple over there.cool huh? </p>
+   <p>a bunch of freaking text here. write what you want. theres a pineapple over there.cool huh? </p> <p>a bunch of freaking text here. write what you want. theres a pineapple over there.cool huh?</p> 
+   
+    <img class="left" src="pineapple.jpg"alt="spongebob's house"/>
+
+    <p>unuy a bunch of freaking text here. write what you want. theres a pineapple over there.cool huh? </p>
+    <p>a bunch of freaking text here. write what you want. theres a pineapple over there.cool huh? </p> <p>a bunch of freaking text here. write what you want. theres a pineapple over there.cool huh?</p>
+</body>
+
+
+</html>
