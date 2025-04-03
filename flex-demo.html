@@ -1,0 +1,124 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>flexbox demo</title>
+    <style>
+        body {
+            background-color: #7ecaee;
+            color: #21b2f6;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            max-width: 80%;
+            margin: 0 auto;
+        }
+
+        #one {
+            background-color: #226fc7;
+            border: 2px solid #4444;
+            border-radius: 20px;
+            margin-bottom: 50px;
+            padding: 10px;
+            display: flex;
+            flex-direction: row;
+           justify-content: space-around;
+            align-items:center;
+
+        }
+
+        #one div {
+            text-align: center;
+            background-color: #3b6ebf;
+            border: 2px solid #4444;
+            border-radius: 10px;
+            /*flex-grow: 1;*/
+        }
+
+        #two {
+            background-color: #2059bc;
+            border: 2px solid #444;
+            border-radius: 20px;
+            margin-bottom: 50px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+           justify-content: space-around;
+            align-items:center;
+        }
+
+        #two div {
+            text-align: center;
+            background-color: #064a61;
+            border: 2px solid #297ae544;
+            border-radius: 10px;
+            /*flex-grow: 1;*/
+        }
+
+        #three {
+            background-color: #20a8e7;
+            border: 2px solid #4744ff;
+            border-radius: 20px;
+            margin-bottom: 50px;
+            padding: 10px;
+            display: flex;
+            flex-direction:row;
+           justify-content: space-around;
+            align-items: stretch;
+        
+        }
+
+        #three div {
+            text-align: center;
+            background-color: #86e5e7;
+            border: 2px solid #4444;
+            border-radius: 10px;
+            flex-grow: 2;
+        }
+        .grow{
+            flex-grow:2;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h2>flexbox demo setup</h2>
+    <div id="one">
+        <div>
+            <p>one</p>
+        </div>
+        <div>
+            <p>two</p>
+        </div>
+        <div>
+            <p>three<br>has more text</p>
+        </div>
+    </div>
+
+    <div id="two">
+        <div>
+            <p>one</p>
+        </div>
+        <div>
+            <p>two</p>
+        </div>
+        <div>
+            <p>three<br>has more text</p>
+        </div>
+    </div>
+
+    <div id="three">
+        <div>
+            <p>one</p>
+        </div>
+        <div>
+            <p>two</p>
+        </div>
+        <div>
+            <p>three<br>has more text</p>
+        </div>
+    </div>
+</body>
+
+</html>
