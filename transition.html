@@ -4,64 +4,63 @@
 
 <head>
     <meta charset="utf-8">
-    <title>text stuff</title>
-
+    <title>transition site</title>
     <style>
-        body {
-            background: blue;
-            color: #fff;
-
-            .draegan {
-                color: rgb(0, 225, 255)
-            }
-            .bob {
-                color:#281E5D
-            }
-            .mike {
-                color: #1F456E
-            }
-            .god {
-                color: #4169E1
-            }
-            .love {
-                color: #00B7EB
-            }
-            .rfr {
-                color: #000080
-            }
+      
+    #one {
+        width: 100px;
+        height: 100px;
+        background: plum;
+        border: 2px solid palevioletred;
+        transition:transform 2s,background 1s;
+    }
+    #one:hover{
+transform: rotate(20deg) scale(2);
+background: pink;
+    }
+    #two {
+        width: 200px;
+        height: 200px;
+        background: purple;
+        border:20px solid rgb(179, 4, 179);
+        transition:border-radius1;                             
+    }
+    #two:hover{
+ background: rgb(128, 28, 128);
+ border-radius: 50%;
+    }
+    #three {
+        width: 50px;
+        height: 50px;
+        background: blue;
+        border: 10px solid rgb(15, 15, 191);
+       transition: transform 5s, background 1s;
+    }
+    #three:hover{
+        background: rgb(54, 54, 169);
+        transform: rotate(5000000deg);
+    
+    }
+    #four {
+        width: 500px;
+        height: 50px;
+        background: green;
+        border: 100px solid rgb(24, 186, 24) ;
+        transition: transform 1s, background 1s;
+    
+    }
+    #four:hover{
+        background: rgb(47, 117, 47);
+        transform: rotate(-1000000deg);
+    }
     </style>
 </head>
 
 <body>
-    <h1 class="draegan"> this a title</h1>
-    <h2 class="bob"> this is a subtitle</h2>
-    <p class="mike">hello world.</p>
-    <h3 class="god"> this is smaller</h3>
-    <blockquote class=" bob">this is a blockquote</blockquote>
-
-    <code class="mike">this is code.</code></code>
-    <p class="draegan"> this is something else. boring old text. and stuff.
- 
- 
-
-    <h2 class="bob"> this is a list</h2>
-    <hs class="god"></hs>
-    </h2 class= >
-    <ol class=>
-        <li class="god"> <sub>this</sub> is list item</li>
-        <li class="mike"> <small> - nother list item</li>
-        <li class="bob"><em> yup </em> <del> one</del> more</li>
-    </ol>
-    <ul>
-        <li class="rfr"><strong> this </strong> is list item</li>
-        <li class="love"> <mark>another</mark> list item</li>
-        <li class="draegan"> <b> yup </b>one more</li>
-    </ul>
-
-    <p class="mike"><i> this is more text</i></p>
-
-
+   <div id="one"></div>
+   <div id="two"></div>
+   <div id="three"></div>
+   <div id="four"></div>
 </body>
-
 
 </html>
